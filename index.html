@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thế Giới Di Động</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/grid.css">
 </head>
 <body>
     <header>
+       <div class="owl-carousel owl-theme">
         <img src="./image/header.png" alt="">
+        <img src="./image/header1.png" alt="">
+
+       </div>
+        
     </header>
     <nav>
         <div class="container">
@@ -944,12 +949,21 @@
        
         
     </footer>
-    
-
-    
-    <script src="./js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      $(document).ready(function() {
+    $('#slider .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items: 1
+    })
+});
+    </script>
     
 </body>
 </html>

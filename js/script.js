@@ -57,3 +57,9 @@ function tabAuto() {
 }
 setInterval(tabAuto , 5000)
 // Slider Product
+
+
+
+  
+
+
