@@ -11,6 +11,7 @@ btnSlider.forEach(function(button){
         var productCurrent = product.querySelector(".slider-product-item-price-current").innerText
         let products = sessionStorage.getItem('products') ?  JSON.parse(sessionStorage.getItem('products')) : []
         products.push({
+            
             img: productImg,
             name: productName,
             sale:productSale,
